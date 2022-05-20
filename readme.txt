@@ -40,5 +40,23 @@ file.js
 brew install git
 
 git --version : to check git version
-git status
+git status : untracked
 git init
+
+styles.cssfile.txt
+script.js
+
+git add styles.css
+
+git add . 
+
+commit : 
+
+git commit -m 'calender' styles.css // (m stands for message)
+git commit -m 'any message here' .
+
+git log : to get commit logs
+
+branches :
+
+git branch
