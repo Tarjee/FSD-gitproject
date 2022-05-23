@@ -59,4 +59,7 @@ git log : to get commit logs
 
 branches :
 
-git branch
+git branch - to check current branch
+git branch 'give any branchname here' - to create new branch
+
+git checkout branchname - to switch branch
