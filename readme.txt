@@ -59,4 +59,20 @@ git log : to get commit logs
 
 branches :
 
-git branch
+git branch - to check current branch
+git branch 'give any branchname here' - to create new branch
+
+git checkout branchname - to switch branch
+
+git checkout -b 'branch name'
+
+git checkout -b 'copyfeature'
+
+.gitignore - feature 
+
+git remote add origin https://github.com/Tarjee/FSD-gitproject.git
+
+git push -u origin main
+deleting local branch - git branch -D branchname
+
+git pull  branchname
