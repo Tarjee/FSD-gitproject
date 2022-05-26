@@ -26,3 +26,26 @@ paired elements - <div>...</div>
 
  3. image :
   img : <....../>
+
+4. anchor :
+  a : <a> </a> -linking element
+
+5.list
+     -unordered list
+         ul
+         <ul>
+         <li>...</li> - List item
+         <li>...</li>
+         </ul>
+      -ordered list
+      ol
+      <ol>
+      <li></li>
+      
+      </ol>
+
+6.hr - for creating horizontal line
+hr :
+7. br: new line
+8. spaces
+ &nbsp;
