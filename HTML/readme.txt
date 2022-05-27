@@ -49,3 +49,13 @@ hr :
 7. br: new line
 8. spaces
  &nbsp;
+
+9. Form 
+<form>......</form>
+
+input : where you get/collect information from user
+<input type name />
+
+    button
+    <button type="button"></button>
+    <input type = " submit"/>
