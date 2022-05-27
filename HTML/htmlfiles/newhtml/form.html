@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Form</title>
+
+</head>
+<body>
+    <!-- Form :
+         action
+         function abc(){
+             //url where to submit ? pass the data
+             message 
+         }
+    -->
+
+    
+    <form action="/submit-data">
+    <label >Username *</label>
+    
+
+        <input type="text" placeholder="Enter name" name="username" required/>
+        <label >Email</label>
+        <input type="email" name ="useremail"/>
+        <br/>
+        <label > <input type="radio" name ="Gender" value="female"/>Female</label>
+        
+        <label><input type="radio" name ="Gender" value="male"/>Male</label>
+
+        <br/>
+        <button type="submit">Submit Form</button>
+       
+       
+        <!-- <input type="number"/> 
+        <input type="color"/> 
+        <input type="date"/> 
+        <input type="month"/> 
+        <input type="file"/> 
+        <input type="email"/> 
+        <input type="password"/> 
+        placeholder -> temporary text holder
+        if button tag is not in form tag we do button type as button
+  with radio button giving same name we can select one option ...
+       -->
+
+    
+    </form>
+
+</body>
+
+</html>
+<!--http://127.0.0.1:5500/submit-data?
+http://127.0.0.1:5500 - localhost
+ /submit-data -action
+ ? - data
+http://127.0.0.1:5500/submit-data? = username -> Faiza
+
+regex : .org , .tech , .com
+-->
