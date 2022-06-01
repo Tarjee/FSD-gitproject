@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html>
-<head>
+  <head>
     <title>Form</title>
+  </head>
 
-</head>
-<body>
+  <body>
     <!-- Form :
          action
          function abc(){
@@ -13,38 +13,62 @@
          }
     -->
 
-    
     <form action="/submit-data">
-    <label >Username *</label>
-    
+      <label>Username *</label>
 
-        <input type="text" placeholder="Enter name" name="username" required readonly/>
-        <label >Email</label>
-        <input type="email" name ="useremail" required readonly/>
-        <br/>
-        <label for="male">Male</label>
-        <input type="radio" name = "Gender" value="male" id="male" disabled/>
-        <label for="Female">Female</label>
-        <input type="radio" name = "Gender" value="female" id="female" checked disabled/>
-        <!--<label > <input type="radio" name ="Gender" value="female"/>Female</label>
-        
-        <label><input type="radio" name ="Gender" value="male"/>Male</label>
-        -->
-        <br/>
-        
-        <label for="reminder">Reminder</label>
-        <input type="checkbox" id="reminder" name="reminder"checked disabled/>
-        <label for="game">Sports</label>
-        <input type="checkbox" name="sports" id="game" checked disabled/>
-        <input type="file" accept=" .jpg">
-        
-        <br/>
-        <button type="submit" disabled>Submit Form</button>
-       
+      <input type="text" placeholder="Enter name" name="username" required />
+      <label>Email</label>
+      <input type="email" name="useremail" />
+      <br />
+      <label>
+        <input type="radio" name="Gender" value="female" checked />Female</label
+      >
 
+      <label><input type="radio" name="Gender" value="male" />Male</label>
 
-       
-        <!-- <input type="number"/> 
+      <br />
+      <label for="reminder">Reminder</label>
+      <input type="checkbox" name="reminder" id="reminder" />
+      <label for="sports">Sports</label>
+      <input type="checkbox" name="sports" id="sports" />
+      <br />
+      <input type="file" accept=".jpg" />
+      <!-- row: cols:-->
+      <label for="review">Review</label>
+      <textarea id="review" name="review" cols="50" rows="4" maxlength="50">
+Tuesday, 31 May 2022, 
+</textarea
+      >
+
+      <br />
+      <br />
+      <br />
+
+      <!-- select / select box/dropdown
+    array = multiple data
+    loop - visit each data from array and show in html
+    required
+    disabled
+    autofocus
+    chips
+    multiple
+
+    -->
+
+      <select name="colors" size="3" multiple>
+        <option value="">--Select color--</option>
+        <option value="red">Red</option>
+        <option value="green">Green</option>
+        <option value="pink">Pink</option>
+        <option value="gray">Gray</option>
+        <option value="aqua">Aqua</option>
+        <option value="brown">brown</option>
+      </select>
+      <br />
+      <br />
+      <button type="submit">Submit Form</button>
+
+      <!-- <input type="number"/> 
         <input type="color"/> 
         <input type="date"/> 
         <input type="month"/> 
@@ -55,18 +79,46 @@
         if button tag is not in form tag we do button type as button
   with radio button giving same name we can select one option ...
        -->
-
-    
     </form>
+    <h1>Tables:</h1>
+    <!--
+        table
+        tr - table row
+        td- table data
+        th - table heading
+    -->
+    <table border="2">
+    </tr>
+    <tr>
+      <th colspan="3">Name</th>
+      <!--<th>Last Name</th>
+    <th>Age</th> -->
+    </tr>
+      <tr>
+        <th>Name</th>
+        <th>Lastname</th>
+        <th>Age</th>
+      </tr>
 
-</body>
-
+      <tr>
+        <td>Faiza</td>
+        <td>Khaled</td>
+        <td>23</td>
+      </tr>
+      <tr>
+        <td>Tasmin</td>
+        <td>Khaled</td>
+        <td>25</td>
+        <tr>
+            <td colspan="3">Total user:3</td>
+          </tr>
+    </table>
+  </body>
 </html>
-<!--http://127.0.0.1:5500/submit-data?
+<!-- http://127.0.0.1:5500/submit-data?
 http://127.0.0.1:5500 - localhost
  /submit-data -action
  ? - data
-http://127.0.0.1:5500/submit-data? = username -> Faiza
-
-regex : .org , .tech , .com
--->
+ http://127.0.0.1:5500/submit-data? = username -> Faiza
+ regex : .org , .tech , .com
+ -->

@@ -1,26 +1,32 @@
 <!DOCTYPE html>
 <html>
+  <head>
+    <title>Audio Video</title>
+  </head>
 
-<head>
-<title>Audio Video</title>
-</head>
-
-<body>
-    <p style="margin: 100px;"></p>
+  <body>
+    <p style="margin: 50px"></p>
     <!-- autoplay -->
-    <audio src="audio.mp3" type ="audio/mpeg" controls loop></audio>
+    <audio src="audio.mp3" type="audio/mpeg" controls loop></audio>
 
     <audio controls muted>
-        <source src="audio.mp3" type="audio/mpeg"/>
-        </audio>
-        
-        <video controls height = "400" width = "500" poster="../../images/stock-photo-a-picture-of-the-beautiful-view-of-birds-1836263689.jpeg">
-  <source src="video.mp4" type="video/mp4">
-        </video>
-       <!-- <video controls height="400" width="500">
+      <source src="audio.mp3" type="audio/mpeg" />
+    </audio>
+
+    <video
+      controls
+      muted
+      loop
+      height="400"
+      width="500"
+      poster="../newhtml/images/stock-photo-a-picture-of-the-beautiful-view-of-birds-1836263689.jpeg"
+    >
+      <source src="video.mp4" type="video/mp4" />
+    </video>
+    <!-- <video controls height="400" width="500">
             <source src="video.mp4" type="video/mp4">
-        </video> -->  
-</body>
+        </video> -->
+  </body>
 </html>
 
 <!-- .mp3, .ogg, .wav
