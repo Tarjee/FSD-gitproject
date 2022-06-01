@@ -18,7 +18,7 @@
 
       <input type="text" placeholder="Enter name" name="username" required />
       <label>Email</label>
-      <input type="email" name="useremail" />
+      <input type="email" name="useremail" autofocus />
       <br />
       <label>
         <input type="radio" name="Gender" value="female" checked />Female</label
@@ -86,32 +86,63 @@ Tuesday, 31 May 2022,
         tr - table row
         td- table data
         th - table heading
+        thead - table head
+        tbody - table body
+        tfoot - table foot
     -->
     <table border="2">
-    </tr>
-    <tr>
-      <th colspan="3">Name</th>
+      <caption>
+        Table Name
+      </caption>
+
+      <thead>
+        <tr>
+          <th>Heading</th>
+          <th>Name</th>
+          <th>Lastname</th>
+          <th>Age</th>
+          <th>Id</th>
+        </tr>
+      </thead>
       <!--<th>Last Name</th>
     <th>Age</th> -->
-    </tr>
-      <tr>
-        <th>Name</th>
-        <th>Lastname</th>
-        <th>Age</th>
-      </tr>
 
-      <tr>
-        <td>Faiza</td>
-        <td>Khaled</td>
-        <td>23</td>
-      </tr>
-      <tr>
-        <td>Tasmin</td>
-        <td>Khaled</td>
-        <td>25</td>
+      <tbody>
         <tr>
-            <td colspan="3">Total user:3</td>
-          </tr>
+          <th>User</th>
+          <td>Faiza</td>
+          <td>Khaled</td>
+          <td>23</td>
+          <td>01</td>
+        </tr>
+        <tr>
+          <th>New user</th>
+          <td>Tasmin</td>
+          <td>Khaled</td>
+          <td>25</td>
+          <td>02</td>
+        </tr>
+
+        <tr>
+          <td colspan="5">Total user:3</td>
+        </tr>
+        <tr>
+          <th rowspan="2">Data</th>
+          <td rowspan="2">Valid user</td>
+          <td>Faiza</td>
+          <td>20</td>
+          <td>03</td>
+        </tr>
+        <tr>
+          <td>Neha</td>
+          <td>30</td>
+          <td>04</td>
+        </tr>
+      </tbody>
+
+      <tfoot>
+        <td colspan="5">Welcome user</td>
+      </tfoot>
     </table>
   </body>
 </html>
